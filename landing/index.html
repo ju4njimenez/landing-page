@@ -7,19 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JZ</title>
     <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="/landing/fontawesome/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="contenedor-img">
+            <img src="./imagenes/363db910feed41b69ce1d17a68986fcd.png">
         </div>
+
         <nav class="menu">
-            <ul class="items.menu">
+           <label for="menu-toggle">
+            <div class="contenedor-icono-menu">
+                <i class="fas fa-bars icon-menu"></i>
+            </div>
+           </label>
+           <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <ul class="items-menu">
                 <li><a href="#mi-perfil">SOBRE MI</a></li>
                 <li><a href="#proyectos">PROYECTOS</a></li>
                 <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
+        
         </nav>
     </header>
     <main>
@@ -59,11 +69,8 @@
                         <div class="proyectos-mini-recuadro">
                             <div class="proyectos-mini-content">
                                 <h3>Proyecto 1</h3>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ad
-                                    nobis, deserunt
-                                    explicabo quis recusandae facere, veritatis adipisci exercitationem possimus
-                                    nesciunt.
-                                    Accusamus voluptatibus, ullam voluptate beatae nemo animi officia est!
+                                <p class="descripcion">Este proyecto todavia no existe pero
+                                    seguramente va a estar god, paciencia :)
                                 </p>
                                 <a href="" class="ver-proyecto">Ver proyecto</a>
                             </div>
@@ -71,11 +78,7 @@
                         <div class="proyectos-mini-recuadro">
                             <div class="proyectos-mini-content">
                                 <h3>Proyecto 2</h3>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ad
-                                    nobis, deserunt
-                                    explicabo quis recusandae facere, veritatis adipisci exercitationem possimus
-                                    nesciunt.
-                                    Accusamus voluptatibus, ullam voluptate beatae nemo animi officia est!
+                                <p class="descripcion">Este por lo tanto tampoco, pero va a ser mas god todavia 
                                 </p>
                                 <a href="" class="ver-proyecto">Ver proyecto</a>
                             </div>
@@ -83,11 +86,7 @@
                         <div class="proyectos-mini-recuadro">
                             <div class="proyectos-mini-content">
                                 <h3>Proyecto 3</h3>
-                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ad
-                                    nobis, deserunt
-                                    explicabo quis recusandae facere, veritatis adipisci exercitationem possimus
-                                    nesciunt.
-                                    Accusamus voluptatibus, ullam voluptate beatae nemo animi officia est!
+                                <p class="descripcion">La tercera no fue la vencida esta vez, ah pero cuando exista...
                                 </p>
                                 <a href="" class="ver-proyecto">Ver proyecto</a>
                             </div>
@@ -113,7 +112,7 @@
                     <div class="container-recuadros-contacto">
                         <div class="form-recuadro">
 
-                            <form>
+                            <form class="form-contacto">
                                 <h3>Contactame</h3>
                                 <div class="secciones-contacto">
                                     <label for="correo">Correo electronico</label>
@@ -128,7 +127,9 @@
                         </div>
                         <div class="redes-recuadro">
                             <div class="redes-content">
+                                <div class="contenedor-titulo-redes">
                                 <h3>Redes sociales</h3>
+                                </div>
                                 <div class="redlogos-container">
                                     <div class="logo-container">
                                         <a href="https://www.instagram.com/ju4n.jz/" target="_blank"><img src="./imagenes/instagram.png"

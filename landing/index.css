@@ -15,6 +15,7 @@ body {
     background-color: black;
     margin: 0;
     height: 100%;
+    width: 100%;
     position: relative;
     padding-bottom: 3.5%;
 }
@@ -34,9 +35,6 @@ header {
 .contenedor-img {
     width: 20%;
     height: 100%;
-    background-image: url(./imagenes/363db910feed41b69ce1d17a68986fcd.png);
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +72,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #4C194D;
+    color: #110C17;
 }
 
 main {
@@ -115,7 +113,7 @@ h2 {
 .sobre-mi-parrafo {
     width: 100%;
     height: 100%;
-    margin: 2%;
+    margin: 4%;
     margin-bottom: 10%;
     font-size: 150%;
     font-weight: 400;
@@ -125,6 +123,7 @@ h2 {
 .proyectos-recuadro {
     background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 130, 159, 1) 0%, rgba(103, 56, 96, 1) 90%);
     width: 100%;
+    height: 100%;
     margin: 5%;
     border-radius: 20px;
 }
@@ -240,31 +239,35 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-overflow: auto;}
+    overflow: auto;
+}
 
-.secciones-contacto{
+.secciones-contacto {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     width: 80%;
-    height: 30%; 
+    height: 30%;
     padding: 2%;
 }
-.mail-input{
+
+.mail-input {
     width: 100%;
     font-size: 130%;
     border-radius: 5px;
 }
-label{
+
+label {
     font-size: 120%;
 }
 
-textarea{
+textarea {
     resize: none;
     height: 100%;
     font-size: 130%;
     border-radius: 5px;
 }
-.enviar-mensaje{
+
+.enviar-mensaje {
     width: 15%;
     height: 10%;
     margin-top: 1%;
@@ -281,6 +284,7 @@ textarea{
     border-radius: 15px;
     margin-bottom: 4%;
 }
+
 .redes-content {
     height: 90%;
     width: 90%;
@@ -290,36 +294,173 @@ textarea{
     flex-direction: column;
     align-items: center;
 }
-.redlogos-container{
+
+.redlogos-container {
     width: 100%;
     height: 80%;
     margin: 2%;
     display: flex;
 }
 
-.logo-container{
+.logo-container {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.logo-redes{
-    width: 40%;
-    margin-left: 30%;
+
+.logo-redes {
+    width: 50%;
+    margin-left: 25%;
     margin-bottom: 10%;
 }
 
-footer{
+footer {
     position: absolute;
-    bottom: 0;    
+    bottom: 0;
     height: 3%;
     width: 100%;
-    background: rgb(77,25,77);
-    background: radial-gradient(circle, rgba(77,25,77,1) 0%, rgba(27,58,75,0.14889705882352944) 49%, rgba(0,100,102,1) 100%);
+    background: rgb(77, 25, 77);
+    background: radial-gradient(circle, rgba(77, 25, 77, 1) 0%, rgba(27, 58, 75, 0.14889705882352944) 49%, rgba(0, 100, 102, 1) 100%);
     margin-top: 10%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu-toggle {
+    display: none
+}
+
+.icon-menu {
+    font-size: 170%;
+    color: white;
+}
+
+@media (min-width: 889px) {
+    .icon-menu {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1124px) {
+    li a {
+        font-size: 100%;
+    }
+
+    .sobre-mi-recuadro {
+        margin-top: 20%;
+    }
+
+    .contacto-recuadro {
+        margin-bottom: 10%;
+    }
+
+    .enviar-mensaje {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 888px) {
+    .items-menu{
+        height: 60vh;
+        width: 50vw;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #37274C;
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none
+    }
+
+    .contenedor-img {
+        width: 50%;
+        justify-content: flex-start;
+        margin-left: 10%;
+    }
+
+    .icon-menu {
+        font-size: 200%;
+    }
+
+    .menu-toggle:checked+.items-menu {
+        display: flex;
+    }
+    .contacto-recuadro{display: flex;}
+    .enviar-mensaje{
+        font-size: 70%;
+    }
+    .container-recuadros-contacto{
+        flex-direction: column;
+    }
+    .content-contacto{
+        height: 90%;
+        width: 100%
+    }
+    .form-recuadro{
+        height: 100%;
+        width: 80%;
+    }
+    .redes-recuadro{
+        height: 100%;
+        width: 80%;
+    }
+}
+
+@media (max-width:640px) {
+    .sobre-mi-recuadro {
+        margin-top: 35%;
+    }
+
+    .contacto-recuadro {
+        margin-bottom: 20%;
+        height: 100%;
+    }
+
+    .form-contacto {
+        font-size: 0.7em;
+    }
+
+    .enviar-mensaje {
+        font-size: 70%;
+    }
+
+    h2 {
+        font-size: 1.7em
+    }
+
+    .contenedor-titulo-redes {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .proyectos-mini-recuadro {
+        height: 90%;
+    }
+
+    .descripcion {
+        height: 75%;
+    }
+
+    .ver-proyecto {
+        margin-top: 15%;
+    }
 }
